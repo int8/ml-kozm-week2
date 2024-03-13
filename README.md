@@ -68,3 +68,9 @@ jupyter notebook
 ```shell
 wget "https://www.dropbox.com/scl/fi/zzrlrlrk3sm8mn2k7pep6/plasmodium.zip?rlkey=4ibtuuz6p77s8nxh69qc24502&dl=1" -O plasmodium.zip
 ```
+
+# Amazon reviews
+
+```shell 
+wget "https://www.dropbox.com/scl/fi/xhb6h45h8do9y7lk6pnc7/amazon_small.csv?rlkey=itldibugi9382gsvpbqbyesi2&dl=1" -O amazon.csv 
+```
