@@ -62,3 +62,9 @@ Następnie, uruchom narzędzie **Jupyter Notebook**
 ```bash
 jupyter notebook
 ```
+
+
+### Malaria dataset 
+```shell
+wget "https://www.dropbox.com/scl/fi/zzrlrlrk3sm8mn2k7pep6/plasmodium.zip?rlkey=4ibtuuz6p77s8nxh69qc24502&dl=1" -O plasmodium.zip
+```
