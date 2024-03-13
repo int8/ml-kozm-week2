@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+			.code {
+			  font-size: 12px;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+	<section>
+		<h3> Wstęp do Uczenia Maszynowego</h3>
+		<img src="http://localhost:8000/public/images/logo.png" height="25%" width="25%">
+
+		<div class="medium">
+			Kamil Czarnogórski <br />
+			kamil@czarnogorski.pl <br />
+			int8@github
+		</div>
+	</section>
+	<section><h5>Use case #1: <br /> Wykrywanie zarodźca malarii na obrazach rozmazu krwi</h5> </section>
+	<section><h5>Dane </h5>
+		<div class="smaller">
+			<i>"Malaria images were taken from thick blood smears and stained using Field stain at x1000 microscope magnification.
+The TB images were made from fresh sputum and stained using ZN (Ziehl Neelsen) stain. These were examined under x1000 magnification.
+Finally the intestinal parasites images were captured from slides of a wet preparation, i.e. a portion of stool sample mixed in a drop of normal saline and examined under x400 magnification. The experts identified bounding boxes around each object of interest in every image. In thick blood smear images, plasmodium were annotated"</i>
+		</div>
+		<img src="http://localhost:8000/public/images/plasmodium.png" height="30%"  width="30%">
+	</section>
+	<section><h6>Dane: plik JPG  <br />+ odpowiadający mu plik XML </h6>
+		<img src="http://localhost:8000/public/images/xml.png" height="50%"  width="50%">
+	</section>
+	<section><h3>Ćwiczenie: </h3>
+	<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
+	<p class="smaller">
+		Otwórz notebook "examine_training_data" i wykonaj polecenia: wczytaj dane zdjęć rozmazu krwi i zapoznaj się z nimi
+	</p>
+	</section>
+
+
+</div>
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>yes 
+	</body>
+</html>
