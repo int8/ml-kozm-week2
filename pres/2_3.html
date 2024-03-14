@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+			.tiny {
+			  font-size: 10px;
+			}
+			.code {
+			  font-size: 12px;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+	<section>
+		<h3> Wstęp do Uczenia Maszynowego</h3>
+		<img src="http://localhost:8000/public/images/logo.png" height="25%" width="25%">
+
+	</section>
+	<section><h5>Use case #2: <br /> Analiza sentymentu produktów z amazon.com</h5> </section>
+	<section><h5>Dane  <br /> 36k wierszy z Amazon Polarity </h5>
+		<div class="smaller">
+			https://huggingface.co/datasets/amazon_polarity
+		</div>
+		<img src="http://localhost:8000/public/images/amazon-data.png" height="50%"  width="50%">
+	</section>
+	<section><h3>Ćwiczenie </h3>
+	<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
+	<p class="smaller">
+		Otwórz notebook "amazon/1_dataset.ipynb" i wykonaj polecenia: wczytaj dane i zapoznaj się z nimi
+	</p>
+	</section>
+
+</div>
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>yes
+	</body>
+</html>

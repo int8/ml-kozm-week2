@@ -167,3 +167,7 @@ local_work/
 malaria/runs
 *.gz
 *.pkl
+amazon/runs
+amazon/*.csv
+amazon/*.bin
+embed

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+			.tiny {
+			  font-size: 10px;
+			}
+			.code {
+			  font-size: 12px;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+	<section>
+		<h3> Wstęp do Uczenia Maszynowego</h3>
+		<img src="http://localhost:8000/public/images/logo.png" height="25%" width="25%">
+
+	</section>
+	<section><h5>Use case #2: <br /> Analiza sentymentu produktów z amazon.com</h5> </section>
+	<section><h5>Reprezentacja wektorowa tekstu </h5>
+		<div class="smaller">
+			Bag of Words
+		</div>
+		<img src="http://localhost:8000/public/images/bow.png" height="50%"  width="50%">
+	</section>
+	<section><h5>Text Embeddings</h5>
+		<div class="smaller">
+			Próba reprezentowania tekstu w postaci wektorów tak aby podobne znaczeniowo teksty
+			były "podobne" ("bliskie sobie") w przestrzeni wektorowej
+		</div>
+		<img src="http://localhost:8000/public/images/cp2077.png" height="70%"  width="70%">
+	</section>
+	<section><h5>Text Embeddings - sentence-transformers</h5>
+		<div class="smaller">
+		Sieci syjamskie
+		</div>
+		<img src="http://localhost:8000/public/images/sbert.gif" height="60%"  width="60%">
+	</section>
+	<section><h3>Ćwiczenie </h3>
+	<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
+	<p class="smaller">
+		Otwórz notebook "amazon/2_text_representation.ipynb" i wykonaj polecenia
+	</p>
+	</section>
+
+</div>
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>yes
+	</body>
+</html>
