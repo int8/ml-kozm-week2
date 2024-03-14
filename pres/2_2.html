@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Module 7 - Machine Learning</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.smaller {
+			  font-size: 16px;
+			}
+			.code {
+			  font-size: 12px;
+			}
+		  </style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+	<section>
+		<h3> Wstęp do Uczenia Maszynowego</h3>
+		<img src="http://localhost:8000/public/images/logo.png" height="25%" width="25%">
+
+		<div class="medium">
+			Kamil Czarnogórski <br />
+			kamil@czarnogorski.pl <br />
+			int8@github
+		</div>
+	</section>
+	<section><h5>Use case #1: <br /> Wykrywanie zarodźca malarii na obrazach rozmazu krwi</h5> </section>
+	<section><h5>Model </h5>
+		<div class="smaller">
+			"Mask R-CNN, short for Mask Region-based Convolutional Neural Network, is an extension of the Faster R-CNN object detection algorithm used for both object detection and instance segmentation tasks in computer vision."
+		</div>
+		<img src="http://localhost:8000/public/images/maskrcnn.png" height="60%"  width="60%">
+
+	</section>
+	<section><h5>Metryka ewaluacji <br /> mAP (mean average precision) </h5>
+		<div class="smaller">
+			"mAP encapsulates the tradeoff between precision and recall and maximizes the effect of both metrics"
+		</div>
+		<img src="http://localhost:8000/public/images/iou.png" height="60%"  width="60%">
+
+	</section>
+	<section>
+		<h3> Co potrzebujemy?</h3>
+	</section>
+	<section><h6>Torchvision (Mask-RCNN)</h6>
+		<p class="smaller">
+			pip install torchvision
+		</p>
+		<img src="http://localhost:8000/public/images/maskrcnn-torch.png" height="50%"  width="50%">
+	</section>
+	<section><h6>Torchmetrics (mAP)</h6>
+		<p class="smaller">
+			pip install torchmetrics
+		</p>
+		<img src="http://localhost:8000/public/images/iou.png" height="50%"  width="50%">
+	</section>
+	<section><h6>Tensorboard </h6>
+		<p class="smaller">
+			pip install tensorboard
+		</p>
+		<img src="http://localhost:8000/public/images/tensorboard.gif" height="50%"  width="50%">
+	</section>
+	<section data-background-image="http://localhost:8000/public/images/rtx.jpg">
+		<h6> Moc obliczeniowa </h6>
+		<p class="smaller"> pożyczymy moc obliczeniową względnie tanio z vast.ai</p>
+	</section>
+	<section><h3>Ćwiczenie: </h3>
+	<img src="http://localhost:8000/public/images/brain.png" height="10%"  width="10%">
+	<p class="smaller">
+		Otwórz notebook "malaria/2_training-malaria.ipynb" i wykonaj polecenia:  naucz MASK-RCNN wykrywać zarodźca malarii ze zdjęć rozmazu krwi
+	</p>
+	</section>
+
+
+</div>
+		</div>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>yes 
+	</body>
+</html>
